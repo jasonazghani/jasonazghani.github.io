@@ -177,6 +177,10 @@ h2 {
   margin-bottom: 2rem;
 }
 
+#contact .btn + .btn {
+  margin-left: 1rem;
+}
+
 /* FOOTER */
 footer {
   padding: 2rem;
