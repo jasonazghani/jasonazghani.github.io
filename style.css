@@ -77,6 +77,22 @@ nav ul a:hover {
   justify-content: center;
   text-align: center;
   padding: 6rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('IMG_3048.jpeg') center center / cover no-repeat;
+  opacity: 0.65;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-logo {
@@ -87,10 +103,11 @@ nav ul a:hover {
 
 .hero-sub {
   font-size: 1.1rem;
-  color: var(--muted);
+  color: #00ff41;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
+  text-shadow: 0 0 8px #00ff41;
 }
 
 .btn {
@@ -107,6 +124,23 @@ nav ul a:hover {
 .btn:hover {
   background: var(--accent);
   color: var(--bg);
+}
+
+.btn-retro {
+  border-radius: 999px;
+  border-color: #00ff41;
+  color: #00ff41;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 8px #00ff41;
+  box-shadow: 0 0 10px #00ff4155;
+}
+
+.btn-retro:hover {
+  background: #00ff41;
+  color: #000;
+  text-shadow: none;
+  box-shadow: 0 0 20px #00ff41;
 }
 
 /* SECTIONS */
@@ -126,6 +160,18 @@ h2 {
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 2rem;
+}
+
+.about-photo {
+  margin-bottom: 2rem;
+}
+
+.about-photo img {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
 }
 
 #about p {
